@@ -11,6 +11,8 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"d3": "^7.4.4",
+		"d3-interpolate-path": "^2.2.3",
 		"svelte": "^3.44.0"
 	},
 	"type": "module"
