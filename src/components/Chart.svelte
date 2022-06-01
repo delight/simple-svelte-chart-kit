@@ -32,16 +32,14 @@
 </script>
 
 <div class="chart" bind:clientWidth={width} bind:clientHeight={height}>
-  {#if width && height}
-    <svg {width} {height}>
-      <XAxis scale={xScale} y={height - padding} />
-      <YAxis scale={yScale} x={padding} />
-      <Line data={renderedData} />
-      {#each renderedData as { x, y }}
-        <Datapoint {x} {y} />
-      {/each}
-    </svg>
-  {/if}
+  <svg {width} {height}>
+    <XAxis scale={xScale} y={height - padding} />
+    <YAxis scale={yScale} x={padding} />
+    <Line data={renderedData} />
+    {#each renderedData as { x, y }}
+      <Datapoint {x} {y} />
+    {/each}
+  </svg>
 </div>
 
 <style>
