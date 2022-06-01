@@ -12,8 +12,8 @@
 
   const padding = 50;
 
-  let width;
-  let height;
+  let width = 400;
+  let height = 200;
 
   $: xScale = scaleLinear()
     .domain(xRange)
